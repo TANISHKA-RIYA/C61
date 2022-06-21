@@ -7,37 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <h1>MY PERSONAL PORTFOLIO</h1>
-    <ul class="menu">
-        <li class="links"><a href="#secapps">APPS</a></li>
-        <li class="links"><a href="#secgames">GAMES</a></li>
-        <li class="links"><a href="#secchatbot">CHATBOT</a></li>
-    </ul>
-    <section id="secapps">
-        <h2>APPS</h2>
-        <div class="line"></div>
-        <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/kXhqZYb4qD5ArqnU_csa99ZNs7uPTkIypjWjxFygAuc/embed"></iframe>
-        <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/HBWgABAEAOi2UCq-cYwuKEVyMYy3uJTJy-Q2qO4RRmA/embed"></iframe>
-    </section>
-    <section id="secgames">
-        <h2>GAMES</h2>
-        <div class="line"></div>
-        <a href="https://studio.code.org/projects/gamelab/tdIvuJgFM_iO_QgPD2xIrU4cN5vdQsBOPBsHbYSaDtU" target="_blank">
-            <img src="thumbnail.png">
-        </a>
-        <a href="https://studio.code.org/projects/spritelab/BveqAyA27YgBhjRnzY7uFqXYUwE3rMxfZd90GeOU4Wk" target="_blank">
-            <img src="honeyjar.png">
-        </a>
-    </section>
-    <section id="secchatbot">
-        <h2>CHATBOT</h2>
-        <div class="line"></div>
-        <iframe allow="microphone;" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/5c59335f-e1c3-46e0-9c83-73eb034fb56d">
+    <div class="container">
+        <h1>MY PERSONAL PORTFOLIO</h1>
+        <ul class="menu">
+            <li class="links"><a href="#secapps">APPS</a></li>
+            <li class="links"><a href="#secgames">GAMES</a></li>
+            <li class="links"><a href="#secchatbot">CHATBOT</a></li>
+        </ul>
+        <section id="secapps">
+            <h2>APPS</h2>
+            <div class="line"></div>
+            <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/kXhqZYb4qD5ArqnU_csa99ZNs7uPTkIypjWjxFygAuc/embed"></iframe>
+            <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/HBWgABAEAOi2UCq-cYwuKEVyMYy3uJTJy-Q2qO4RRmA/embed"></iframe>
+        </section>
+        <section id="secgames">
+            <h2>GAMES</h2>
+            <div class="line"></div>
+            <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="carousel-content">
+                            <a href="https://studio.code.org/projects/gamelab/tdIvuJgFM_iO_QgPD2xIrU4cN5vdQsBOPBsHbYSaDtU" target="_blank">
+                                <img src="thumbnail.png">
+                                <p>Neemo</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-content">
+                            <a href="https://studio.code.org/projects/spritelab/BveqAyA27YgBhjRnzY7uFqXYUwE3rMxfZd90GeOU4Wk" target="_blank">
+                                <img src="honeyjar.png">
+                                <p>honey jar</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#mycarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="right carousel-control" href="#mycarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </section>
+        <section id="secchatbot">
+            <h2>CHATBOT</h2>
+            <div class="line"></div>
+            <iframe allow="microphone;" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/5c59335f-e1c3-46e0-9c83-73eb034fb56d">
 </iframe>
-    </section>
+        </section>
+    </div>
 </body>
 
 </html>
